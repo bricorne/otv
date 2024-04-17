@@ -1,0 +1,138 @@
+body {
+  background-color: #262626;
+  color: #f1f1f1;
+  font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header #logo {
+  margin-right: auto;
+}
+header #fav-champ {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header #fav-champ img {
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10%;
+  border: 2px solid #b9a3e3;
+}
+header #login {
+  margin-left: auto;
+  margin-right: 5%;
+  padding: 10px;
+}
+header #login a {
+  color: #f1f1f1;
+}
+
+#logo img {
+  height: 150px;
+  width: 150px;
+}
+
+hr {
+  width: 95%;
+  height: 2px;
+  background-color: #6441a5;
+  border: none;
+  border-radius: 20%;
+  margin-bottom: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search-bar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#search-bar input {
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #6441a5;
+}
+
+#champ-select {
+  width: 100%;
+}
+
+#all-champ {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.champion {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.champion img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10%;
+  border: 2px solid #b9a3e3;
+}
+
+#streamers {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+#streamers .champ-header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 50%, black 20%, transparent);
+          mask-image: linear-gradient(to right, transparent, black 50%, black 20%, transparent);
+}
+#streamers h1 {
+  position: absolute;
+  left: 45%;
+}
+#streamers ul {
+  width: 100%;
+  text-align: center;
+}
+#streamers ul .streamer {
+  border: 3px solid #6441a5;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 20px;
+}
+#streamers ul .streamer li {
+  list-style: none;
+  display: inline;
+}
+#streamers ul .streamer li .streamer-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 10%;
+  border: 2px solid #6441a5;
+}
+#streamers ul .streamer li a {
+  color: #b9a3e3;
+}/*# sourceMappingURL=style.css.map */

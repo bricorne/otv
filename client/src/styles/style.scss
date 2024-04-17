@@ -1,0 +1,163 @@
+$darkpurp: #6441a5;
+$lightpurp: #b9a3e3;
+$back: #262626;
+$white: #f1f1f1;
+
+body {
+    background-color: $back;
+    color: $white;
+    font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+// HEADER
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    #logo {
+        margin-right: auto;
+    }
+
+    #fav-champ {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            margin: 5px;
+            width: 70px;
+            height: 70px;
+            border-radius: 10%;
+            border: 2px solid $lightpurp;
+        }
+    }
+
+    #login {
+        margin-left: auto;
+        margin-right: 5%;
+        padding: 10px;
+
+        a {
+            color: $white;
+        }
+    }
+}
+
+#logo img {
+    height: 150px;
+    width: 150px;
+}
+
+hr {
+    width: 95%;
+    height: 2px;
+    background-color: $darkpurp;
+    border: none;
+    border-radius: 20%;
+    margin-bottom: 0;
+}
+
+// MAIN
+// MAIN
+// MAIN
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//champ list
+#search-bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    input {
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 30px;
+        width: 200px;
+        border-radius: 5px;
+        border: 1px solid $darkpurp;
+    }
+}
+
+#champ-select {
+    width: 100%;
+}
+
+#all-champ {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.champion {
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10%;
+        border: 2px solid $lightpurp;
+    }
+}
+
+//streamers
+
+#streamers {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+    .champ-header {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        mask-image: linear-gradient(to right, transparent, black 50%, black 20%, transparent);
+    }
+
+    h1 {
+        position: absolute;
+        left: 45%;
+    }
+
+    ul {
+        width: 100%;
+        text-align: center;
+        .streamer {
+            border: 3px solid $darkpurp;
+            border-radius: 20px;
+            background-size: cover;
+        background-position: center;
+        padding-bottom: 20px;
+            li {
+                list-style: none;
+                display: inline;
+                .streamer-logo {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 10%;
+                    border: 2px solid $darkpurp;
+                }
+                a {
+                    color: $lightpurp;
+                }
+            }
+        }
+    }
+
+
+}
